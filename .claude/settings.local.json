@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(more *)",
+      "PowerShell(Get-ChildItem -Force app,components,lib -Recurse | Where-Object {$_.FullName -notmatch 'node_modules|\\\\.next'} | Select-Object FullName)",
+      "PowerShell(npx tsc --noEmit -p . 2>&1 | Select-Object -First 60)",
+      "PowerShell(npx tsc --noEmit -p . 2>&1 | Select-Object -First 80)",
+      "PowerShell($item = Get-Item 'D:\\\\s2\\\\cybersecurity-b2-b-questionnaire\\\\node_modules\\\\@base-ui\\\\react'; $item.LinkType; $item.Target)",
+      "PowerShell(npx tsc --noEmit -p . 2>&1 | Select-Object -First 100)",
+      "PowerShell(npm install *)",
+      "PowerShell(npm run *)"
+    ]
+  }
+}
